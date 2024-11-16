@@ -1,9 +1,12 @@
-import { Button } from "@/components/ui/button";
-
+import NoteOfTheDay from "./components/NoteOfTheDay";
+import RandomNote from "./components/RandomNote";
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <Button variant="outline">Button</Button>
+    <div className="container mx-auto py-8">
+      <h1 className="text-4xl font-bold mb-8">Welcome to Notes App</h1>
+      <NoteOfTheDay>
+        <RandomNote />
+      </NoteOfTheDay>
     </div>
   );
 }
