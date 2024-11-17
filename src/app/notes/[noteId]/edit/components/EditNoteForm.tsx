@@ -22,7 +22,7 @@ export default function EditNoteForm({ note }: { note: Note }) {
     try {
       await updateNoteAction({ id: note.id }, { title, content });
       router.push('/notes');
-      router.refresh()
+      // router.refresh()
     } catch (error) {
       console.error('Failed to update note', error);
     } finally {
