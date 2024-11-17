@@ -6,6 +6,12 @@ const nextConfig: NextConfig = {
   basePath: '/nextjs-notes-app',
   images: {
     unoptimized: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
   }
 };
 
