@@ -27,10 +27,10 @@ const NoteView = ({ note }: { note: Note }) => {
             {note.content}
           </p>
           <motion.div className='mt-4 flex justify-end space-x-2' initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 0.2}}>
-            <Link href={`/note/${note.id}`}>
+            <Link href={`/notes/${note.id}`}>
               <Button variant='outline'>View</Button>
             </Link>
-            <Link href={`/edit/${note.id}`}>
+            <Link href={`/notes/${note.id}/edit`}>
               <Button variant='outline'>Edit</Button>
             </Link>
           </motion.div>
